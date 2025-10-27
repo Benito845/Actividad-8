@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3 - Mostrar y ocultar imagen</title>
+  <style>
+    body {
+      background-color: #e6ecf0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    a.regresar {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #29850a;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+  <script>
+    function mostrarOcultar() {
+      const imagen = document.querySelector('#foto'); // Selecciona la imagen por su tipo de MOD
+      if (imagen.style.display === 'none') { // Verifica si la imagen si está oculta
+        imagen.style.display = 'block'; // Si está oculta, la muestra
+      } else { // Si la imagen está visible
+        imagen.style.display = 'none'; // La oculta
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Ejercicio 3 - Mostrar y ocultar una imagen</h1>
+  <hr>
+
+  <!-- Imagen local de boxeador -->
+  <img id="foto" src="images/boxeador.png" alt="Boxeador entrenando" width="350">
+
+  <br><br>
+  <input type="button" value="Mostrar / Ocultar" onclick="mostrarOcultar()">
+  <br><br>
+  <a href="../index.html" class="regresar">Regresar al inicio</a>
+</body>
+</html>

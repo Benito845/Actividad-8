@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1 - Cambiar texto de encabezado</title>
+  <style>
+    body {
+      background-color: #e6ecf0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+    }
+
+    h1 {
+      color: #222;
+    }
+    
+    a.regresar {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #29850a;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+  <script>
+    function cambiarTitulo() {
+      document.getElementById('titulo').innerHTML = "TItulo cambiado";
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Ejercicio 1 - Cambiar texto de encabezado</h1>
+  <hr>
+
+  <h2 id="titulo">Titulo sin cambio</h2>
+  <input type="button" value="Cambiar Texto" onclick="cambiarTitulo()">
+
+  <br><br>
+    <!--Enlace para regresar-->
+  <a href="../index.html" class="regresar">Regresar al inicio</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 5 - Contador de clics</title>
+  <style>
+    body {
+      background-color: #e6ecf0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    hr {
+      border: 1px solid #ccc;
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    a.regresar {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #29850a;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+
+  <script>
+    var contador = 0;
+    function contarClics() {
+      contador++; // Incrementa el contador en 1 en 1
+      document.getElementById('cantidad').innerText = "Numero de clics: " + contador; // Actualiza el texto del párrafo con el nuevo valor del contador
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Ejercicio 5 - Contador de clics</h1>
+  <hr>
+
+  <input type="button" value="Haz clic" onclick="contarClics()">
+  <p id="cantidad">Numero de clics: 0</p>
+
+  <br>
+  <a href="../index.html" class="regresar">Regresar al inicio</a>
+</body>
+</html>
